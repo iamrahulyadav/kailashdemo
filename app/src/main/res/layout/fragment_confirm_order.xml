@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.automobile.service.comman.SlidingLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_confirm_order_llContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="@dimen/_3sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <com.automobile.service.customecomponent.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:text="Address Details"
+                        android:textAllCaps="true"
+                        app:font_name="GothamHTF-Book.otf" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/menu_unselected_color" />
+
+
+                    <com.automobile.service.customecomponent.CustomEdittext
+                        android:id="@+id/fragment_confirm_order_etAddress"
+                        style="@style/TextStyle.row_mattresesscare.title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|top"
+                        android:background="@android:color/transparent"
+                        android:gravity="start|top"
+                        android:hint="Enter Address"
+                        android:inputType="textMultiLine"
+                        android:maxLines="4"
+                        android:minHeight="@dimen/_80sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:textColor="@color/collection_color"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="@dimen/_3sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_custom"
+                    android:orientation="vertical">
+
+
+                    <com.automobile.service.customecomponent.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:text="Price Details"
+                        android:textAllCaps="true"
+                        app:font_name="GothamHTF-Book.otf" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/menu_unselected_color" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp">
+
+                            <com.automobile.service.customecomponent.CustomTextView
+                                android:id="@+id/fragment_confirm_order_tvPriceItemCount"
+                                style="@style/TextStyle.row_mattresesscare.title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_toLeftOf="@+id/row_orderlist_tvAmount"
+                                android:text="Price(0 item)"
+                                android:padding="@dimen/_7sdp"
+                                app:font_name="GothamHTF-Medium.otf" />
+
+                            <com.automobile.service.customecomponent.CustomTextView
+                                android:id="@+id/fragment_confirm_order_tvAmount"
+                                style="@style/TextStyle.row_mattresesscare.description"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:text="₹0"
+                                android:textColor="@color/color_black"
+                                android:padding="@dimen/_7sdp"
+                                app:font_name="GothamHTF-Book.otf" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp">
+
+                            <com.automobile.service.customecomponent.CustomTextView
+                                android:id="@+id/row_orderlist_tvOrderNo"
+                                style="@style/TextStyle.row_mattresesscare.title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginTop="@dimen/_3sdp"
+                                android:layout_toLeftOf="@+id/row_orderlist_tvDelFree"
+                                android:text="Delivery"
+                                android:padding="@dimen/_7sdp"
+                                app:font_name="GothamHTF-Medium.otf" />
+
+                            <com.automobile.service.customecomponent.CustomTextView
+                                android:id="@+id/row_orderlist_tvDelFree"
+                                style="@style/TextStyle.row_mattresesscare.description"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:text="Free"
+                                android:textColor="@color/green"
+                                android:padding="@dimen/_7sdp"
+                                app:font_name="GothamHTF-Book.otf" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="@dimen/_3sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.automobile.service.customecomponent.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/_8sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_8sdp"
+                        android:text="Payment Details"
+                        android:textAllCaps="true"
+                        app:font_name="GothamHTF-Book.otf" />
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/menu_unselected_color" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_confirm_order_rlWallate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_10sdp">
+
+                        <com.automobile.service.customecomponent.CustomTextView
+                            style="@style/TextStyle.row_mattresesscare.title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:text="My Wallate"
+                            android:textColor="@color/collection_color"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            android:id="@+id/fragment_confirm_order_tvWallate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/menu_unselected_color" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_confirm_order_rlPayuMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_10sdp">
+
+                        <com.automobile.service.customecomponent.CustomTextView
+                            android:id="@+id/view"
+                            style="@style/TextStyle.row_mattresesscare.title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:text="Payu Money"
+                            android:textColor="@color/collection_color"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            android:id="@+id/fragment_confirm_order_tvPayuMoney"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            />
+
+
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="@color/menu_unselected_color" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_confirm_order_rlCod"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_10sdp">
+
+                        <com.automobile.service.customecomponent.CustomTextView
+                            style="@style/TextStyle.row_mattresesscare.title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:text="Cash On Delivery"
+                            android:textColor="@color/collection_color"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <TextView
+                            android:id="@+id/fragment_confirm_order_tvCod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                          />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/llPrice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.automobile.service.customecomponent.CustomTextView
+                style="@style/TextStyle.fproductdetails_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingTop="@dimen/_3sdp"
+                android:text="TOTAL PRICE"
+                android:textSize="@dimen/_12sdp"
+                app:font_name="GothamHTF-Light.otf" />
+
+
+            <com.automobile.service.customecomponent.CustomTextView
+                android:id="@+id/fragment_confirm_order_tvTotalPrice"
+                style="@style/TextStyle.fproductdetails_categoryname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="@dimen/_3sdp"
+                android:text="₹0"
+                android:textSize="@dimen/_14sdp"
+                app:font_name="GothamHTF-Medium.otf" />
+
+
+        </LinearLayout>
+
+        <com.automobile.service.customecomponent.CustomButton
+            android:id="@+id/fragment_confirm_order_btnContinue"
+            style="@style/EditTextStyle.login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@color/darkorange"
+            android:text="Continue Order"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </LinearLayout>
+
+</com.automobile.service.comman.SlidingLinearLayout>

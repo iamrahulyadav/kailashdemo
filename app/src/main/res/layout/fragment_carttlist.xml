@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.automobile.service.comman.SlidingLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_cardlist_llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fragment_cardlist_llProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/_50sdp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_rlEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/tvEmptyMessage"
+            style="@style/TextStyle.empty_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/no_cart_found"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fragment_cardlist_rvProductList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@color/bg_color">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:background="@color/colorPrimary">
+
+            <LinearLayout
+                android:id="@+id/llPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <com.automobile.service.customecomponent.CustomTextView
+                    style="@style/TextStyle.fproductdetails_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:text="TOTAL PRICE"
+                    android:textSize="@dimen/_12sdp"
+                    app:font_name="GothamHTF-Light.otf" />
+
+
+                <com.automobile.service.customecomponent.CustomTextView
+                    android:id="@+id/fragment_cardlist_tvPriceName"
+                    style="@style/TextStyle.fproductdetails_categoryname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:text="$150"
+                    android:textSize="@dimen/_14sdp"
+                    app:font_name="GothamHTF-Medium.otf" />
+
+
+            </LinearLayout>
+
+            <com.automobile.service.customecomponent.CustomButton
+                android:id="@+id/fragment_cardlist_btnConfirmOrder"
+                style="@style/EditTextStyle.login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:background="@color/darkorange"
+                android:text="Confirm Order"
+                android:textAllCaps="true"
+                android:textSize="@dimen/_14sdp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</com.automobile.service.comman.SlidingLinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/row_orderlist_cvContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_7sdp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/_3sdp"
+    app:cardElevation="@dimen/_3sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ripple_custom"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.automobile.service.customecomponent.CustomTextView
+                    android:id="@+id/row_orderlist_tvOrderNo"
+                    style="@style/TextStyle.row_mattresesscare.title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:text="Order No: 123456"
+                    android:layout_toLeftOf="@+id/row_orderlist_tvAmount"
+                    app:font_name="GothamHTF-Medium.otf" />
+
+                <com.automobile.service.customecomponent.CustomTextView
+                    android:id="@+id/row_orderlist_tvAmount"
+                    style="@style/TextStyle.row_mattresesscare.description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="$100"
+                    android:textColor="@color/color_black"
+                    app:font_name="GothamHTF-Book.otf" />
+
+            </RelativeLayout>
+
+
+            <com.automobile.service.customecomponent.CustomTextView
+                android:id="@+id/row_orderlist_tvDate"
+                style="@style/TextStyle.row_mattresesscare.description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12 feb 2017 09:41: PM"
+                app:font_name="GothamHTF-Book.otf" />
+
+
+            <com.automobile.service.customecomponent.CustomTextView
+                android:id="@+id/row_orderlist_tvStatus"
+                style="@style/TextStyle.row_mattresesscare.description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complited"
+                app:font_name="GothamHTF-Book.otf" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/row_orderlist_rvProductList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@color/bg_color">
+
+            </android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+

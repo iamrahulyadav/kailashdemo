@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/row_cartlist_cvContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_7sdp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="@dimen/_3sdp"
+    app:cardElevation="@dimen/_3sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_custom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/row_cartlist_ivProductImg"
+                    android:layout_width="@dimen/_120sdp"
+                    android:layout_height="@dimen/_110sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:scaleType="fitXY" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/_3sdp"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/row_cartlist_tvPrise"
+                    android:background="@drawable/drawable_border_transprnt_bg"
+                    android:gravity="center">
+
+                    <com.automobile.service.customecomponent.CustomTextView
+                        android:id="@+id/row_cartlist_tvRemove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:text="Remove"
+                        android:textSize="@dimen/_14sdp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <com.automobile.service.customecomponent.CustomTextView
+                    android:id="@+id/row_cartlist_tvTitle"
+                    style="@style/TextStyle.row_mattresesscare.title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:maxLines="2"
+                    android:text="Car Seat Neck Cushion Pillow"
+                    android:textSize="@dimen/_10sdp"
+                    app:font_name="GothamHTF-Medium.otf" />
+
+                <com.automobile.service.customecomponent.CustomTextView
+                    android:id="@+id/row_cartlist_tvDes"
+                    style="@style/TextStyle.row_mattresesscare.description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:maxLines="4"
+                    android:text="Car Seat Neck fjkhkjff fuhidfuhd fdfycduhfcd shjdfchjsdhjfcds fcdshjfchjds fdfhjdhjfdf ffhjkd ffhjdfhjdf f df Pillow"
+
+                    android:textSize="@dimen/_10sdp"
+                    app:font_name="GothamHTF-Medium.otf" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@color/collection_color" />
+
+                <com.automobile.service.customecomponent.CustomTextView
+                    android:id="@+id/row_cartlist_tvPrise"
+                    style="@style/TextStyle.row_mattresesscare.date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="$150"
+                    android:textColor="@color/color_black"
+                    app:font_name="GothamHTF-Medium.otf" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_29sdp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginEnd="@dimen/_3sdp"
+                        android:background="@drawable/drawable_border_transprnt_bg"
+                        android:weightSum="3">
+
+                        <com.automobile.service.customecomponent.CustomTextView
+                            android:id="@+id/row_cartlist_tvMines"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="-"
+                            android:textColor="@color/collection_color"
+                            android:textSize="@dimen/_20sdp" />
+
+                        <com.automobile.service.customecomponent.CustomTextView
+                            android:id="@+id/row_cartlist_tvQty"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/collection_color"
+                            android:textSize="@dimen/_16sdp" />
+
+
+                        <com.automobile.service.customecomponent.CustomTextView
+                            android:id="@+id/row_cartlist_tvPlus"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/collection_color"
+                            android:textSize="@dimen/_20sdp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>
+

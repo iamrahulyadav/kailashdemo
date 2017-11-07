@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.automobile.service.comman.SlidingLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_bookservice_llContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bookservice_bg_color">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_20sdp"
+            android:orientation="vertical">
+
+
+            <com.automobile.service.customecomponent.CustomTextView
+                style="@style/book_service_cardview_inner_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:hint="Customer Details"
+                android:inputType="textPersonName"
+                android:padding="@dimen/_20sdp"
+                android:textColor="@color/forgot_link_color"
+                android:textSize="@dimen/_18sdp"
+                app:font_name="GothamHTF-Book.otf" />
+
+
+            <android.support.v7.widget.CardView
+                style="@style/book_service_cardview"
+                android:layout_width="match_parent">
+
+
+                <com.automobile.service.customecomponent.CustomEdittext
+                    android:id="@+id/fragment_bookservice_etName"
+                    style="@style/book_service_cardview_inner_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    app:font_name="GothamHTF-Book.otf" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                style="@style/book_service_cardview"
+                android:layout_width="match_parent">
+
+
+                <com.automobile.service.customecomponent.CustomEdittext
+                    android:id="@+id/fragment_bookservice_etPhone"
+                    style="@style/book_service_cardview_inner_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Contact No"
+                    android:inputType="phone"
+                    app:font_name="GothamHTF-Book.otf" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                style="@style/book_service_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp">
+
+
+                <com.automobile.service.customecomponent.CustomEdittext
+                    android:id="@+id/fragment_bookservice_etAddress"
+                    style="@style/book_service_cardview_inner_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top"
+                    android:gravity="top"
+                    android:hint="Address"
+                    android:inputType="textPersonName"
+                    app:font_name="GothamHTF-Book.otf" />
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_25sdp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.automobile.service.customecomponent.CustomButton
+                    android:id="@+id/fragment_bookservice_btnSubmit"
+                    style="@style/EditTextStyle.login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:text="@string/submit"
+                    android:textAllCaps="true"
+                    app:font_name="GothamHTF-Bold.otf" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</com.automobile.service.comman.SlidingLinearLayout>

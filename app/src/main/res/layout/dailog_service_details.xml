@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dailog_servicelist_cvContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_20sdp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_centerVertical="true"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_custom"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/dailog_servicelist_ivClose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:src="@drawable/icon_close"/>
+
+
+
+                <com.automobile.service.customecomponent.CustomTextView
+                    style="@style/TextStyle.row_mattresesscare.title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service Details"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp"
+                    app:font_name="GothamHTF-Medium.otf" />
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <com.automobile.service.customecomponent.CustomTextView
+                        android:id="@+id/dailog_servicelist_tvCarname"
+                        style="@style/TextStyle.row_mattresesscare.title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="Swift"
+                        app:font_name="GothamHTF-Medium.otf" />
+
+
+                    <com.automobile.service.customecomponent.CustomTextView
+                        android:id="@+id/dailog_servicelist_tvServiceType"
+                        style="@style/TextStyle.row_mattresesscare.title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:text="Pick-Up"
+                        android:textColor="@color/color_black"
+                        app:font_name="GothamHTF-Medium.otf" />
+
+                </RelativeLayout>
+
+
+                <com.automobile.service.customecomponent.CustomTextView
+                    android:id="@+id/dailog_servicelist_tvServiceDes"
+                    style="@style/TextStyle.row_mattresesscare.description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Servicdscdscdcdcjdjckdjkcjcjjccccdce Type: Pic-Up"
+                    app:font_name="GothamHTF-Book.otf" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@color/collection_color" />
+
+
+                <com.automobile.service.customecomponent.CustomTextView
+                    android:id="@+id/dailog_servicelist_tvServiceNo"
+                    style="@style/TextStyle.row_mattresesscare.date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Srevice No: 1222e2e2"
+                    app:font_name="GothamHTF-Book.otf" />
+
+                <com.automobile.service.customecomponent.CustomTextView
+                    android:id="@+id/dailog_servicelist_tvAddress"
+                    style="@style/TextStyle.row_mattresesscare.date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rajkot"
+                    app:font_name="GothamHTF-Book.otf" />
+
+                <com.automobile.service.customecomponent.CustomTextView
+                    android:id="@+id/dailog_servicelist_tvPhone"
+                    style="@style/TextStyle.row_mattresesscare.date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9725870774"
+                    app:font_name="GothamHTF-Book.otf" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginBottom="@dimen/_6sdp"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:background="@color/collection_color" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_6sdp">
+
+                    <com.automobile.service.customecomponent.CustomTextView
+                        android:id="@+id/dailog_servicelist_tvDAteTime"
+                        style="@style/TextStyle.row_mattresesscare.date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_3sdp"
+                        android:text="21/12/2017"
+                        app:font_name="GothamHTF-Medium.otf" />
+
+
+                    <com.automobile.service.customecomponent.CustomTextView
+                        style="@style/TextStyle.row_mattresesscare.date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toStartOf="@+id/dailog_servicelist_tvStatus"
+                        android:text="Status :"
+                        app:font_name="GothamHTF-Medium.otf" />
+
+
+                    <com.automobile.service.customecomponent.CustomTextView
+                        android:id="@+id/dailog_servicelist_tvStatus"
+                        style="@style/TextStyle.row_mattresesscare.description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:padding="0dp"
+                        android:text="Compited"
+                        app:font_name="GothamHTF-Medium.otf" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.automobile.service.comman.SlidingLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_thankyou_llContainer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/fragment_confirm_order_tvPayuMoney"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/radio_btn_selected" />
+
+
+        <com.automobile.service.customecomponent.CustomTextView
+            style="@style/TextStyle.row_mattresesscare.title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/row_orderlist_tvAmount"
+            android:padding="@dimen/_7sdp"
+            android:text="Thank You!"
+            android:textSize="@dimen/_20sdp"
+            app:font_name="GothamHTF-Medium.otf" />
+
+
+        <com.automobile.service.customecomponent.CustomTextView
+            style="@style/TextStyle.row_mattresesscare.title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_7sdp"
+            android:text="Order Successfully Placed!!"
+            android:textColor="@color/collection_color"
+            android:textSize="@dimen/_18sdp" />
+
+
+        <com.automobile.service.customecomponent.CustomButton
+            android:id="@+id/fragment_thankyou_btnGotoHomePage"
+            style="@style/EditTextStyle.login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:background="@color/green"
+            android:text="Go to homepage"
+            android:textAllCaps="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp" />
+
+
+    </LinearLayout>
+
+
+</com.automobile.service.comman.SlidingLinearLayout>
